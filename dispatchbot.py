@@ -8,7 +8,7 @@ description = '''Dispatch bot'''
 
 default_extensions = (
 	'cogs.owner',
-	'cogs.game'
+	'cogs.dispatch'
 )
 
 def _prefix_callable():

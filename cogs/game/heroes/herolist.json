@@ -1,0 +1,14 @@
+{
+    "Shara": {
+        "id": 0,
+        "name": "Shara",
+        "bio": "Fuck Montblanc",
+        "race": "mikon",
+        "class": "hoho haha",
+        "stats": {
+            "strength": 10,
+            "agility": 17,
+            "intelligence": 17
+        }
+    }
+}

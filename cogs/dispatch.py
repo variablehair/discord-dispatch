@@ -1,7 +1,7 @@
 from discord.ext import commands
 import discord
 import asyncio
-from .classes.mission import Mission
+from .game.missions.classes import Mission
 
 # TODO: delete these test objects
 
