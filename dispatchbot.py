@@ -21,7 +21,7 @@ class DispatchBot(commands.AutoShardedBot):
 		for extension in default_extensions:
 			try:
 				self.load_extension(extension)
-			except Exception as e:
+			except Exception:
 				print(f'Extension {extension} failed to load.')
 				traceback.print_exc()
 

@@ -1,0 +1,10 @@
+# TODO: change into .sh
+
+python3 -m pip install -U git+https://github.com/Rapptz/discord.py@rewrite
+
+mysql -e "CREATE DATABASE dispatch_dev DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_bin;"
+mysql -e "CREATE DATABASE dispatch_prod DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_bin;"
+mysql -e "CREATE USER dispatch_admin@localhost IDENTIFIED BY '${PASSWDDB}';"
+mysql -e "GRANT ALL PRIVILEGES ON dispatch_dev.* TO 'dispatch_admin'@'localhost';"
+mysql -e "GRANT ALL PRIVILEGES ON dispatch_prod.* TO 'dispatch_admin'@'localhost';"
+mysql -e "FLUSH PRIVILEGES;"
